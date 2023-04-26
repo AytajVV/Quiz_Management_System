@@ -1,0 +1,67 @@
+CREATE DATABASE Quiz_Management_System
+USE Quiz_Management_System
+
+---------------------------------------------TABLES---------------------------------------------
+CREATE TABLE Subjects(
+Id int identity PRIMARY KEY,
+[Name] nvarchar(max) not null
+)
+
+CREATE TABLE Questions(
+Id int identity PRIMARY KEY,
+Subject_id int references Subjects(Id),
+[Content] nvarchar(max) not null,
+Answer1 nvarchar(max) not null,
+Answer2 nvarchar(max) not null,
+Answer3 nvarchar(max) not null,
+Answer4 nvarchar(max) not null,
+CorrectAnswer nvarchar(max) not null
+)
+
+
+CREATE TABLE Groups(
+Id int identity PRIMARY KEY,
+Group_no nvarchar(max) not null,
+Specialty nvarchar(max) not null
+)
+
+CREATE TABLE Students(
+Id int identity PRIMARY KEY,
+Group_id int not null references Groups(Id),
+[Name] nvarchar(20) not null,
+Surname nvarchar(30) not null,
+Age int
+
+)
+
+
+CREATE TABLE SubjectStudent(
+Id int identity,
+Student_id int not null references Students(Id),
+Subject_id int not null references Subjects(Id),
+Score int not null
+)
+
+
+----------------------CHECK QUERIES------------------------------
+SELECT * FROM Subjects
+
+SELECT sub.Name Subject_name, que.Content, que.Answer1, que.Answer2, que.Answer3, que.Answer4, que.CorrectAnswer  FROM Subjects sub
+inner join Questions que
+on que.Subject_id = sub.Id
+
+
+
+SELECT * FROM Groups
+SELECT gr.Group_no, gr.Specialty, stu.Name, stu.Surname, stu.Age FROM Groups gr
+INNER JOIN Students stu
+on stu.Group_id=gr.Id
+
+SELECT sub.Name Subject_name, stu.Name Student_name, stu.Surname Student_surname, stu.Age Student_age, gr.Group_no, ss.Score FROM Subjects sub
+INNER JOIN SubjectStudent ss
+on ss.Subject_id = sub.Id
+INNER JOIN Students stu
+on stu.Id = ss.Student_id
+inner join Groups gr
+on gr.Id = stu.Group_id
+

@@ -1,0 +1,19 @@
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.csproj.AssemblyReference.cache
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.Form1.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.Properties.Resources.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.csproj.GenerateResource.cache
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.AssemblyInfoInputs.cache
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.AssemblyInfo.cs
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.csproj.CoreCompileInputs.cache
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Quiz Management System.exe
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Quiz Management System.deps.json
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Quiz Management System.runtimeconfig.json
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Quiz Management System.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Quiz Management System.pdb
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\refint\Quiz Management System.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.pdb
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.genruntimeconfig.cache
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\ref\Quiz Management System.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.Form2.resources

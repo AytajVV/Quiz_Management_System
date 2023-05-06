@@ -43,6 +43,16 @@ Score int not null
 )
 
 
+CREATE TABLE Teachers(
+Id int IDENTITY PRIMARY KEY,
+[Name] nvarchar(40) not null,
+Surname nvarchar(70) not null,
+Number int not null,
+Email nvarchar(100) UNIQUE not null,
+[Password] nvarchar(max) not null
+)
+
+
 ----------------------CHECK QUERIES------------------------------
 SELECT * FROM Subjects
 

@@ -27,3 +27,5 @@ C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\b
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.csproj.CopyComplete
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.AppForm.resources
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.StuLog.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.Teacher_UC.UC_AddNewQuestion.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.NewSubject.resources

@@ -10,11 +10,17 @@
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="NewSubject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="StuLog.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Teacher_UC\UC_AddNewQuestion.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

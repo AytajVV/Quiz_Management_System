@@ -65,5 +65,10 @@ namespace Quiz_Management_System
             else return true;
             
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

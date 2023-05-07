@@ -12,5 +12,11 @@ namespace Quiz_Management_System
             Form2 form2 = new Form2();
             form2.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StuLog stulog = new StuLog();
+            stulog.ShowDialog();
+        }
     }
 }

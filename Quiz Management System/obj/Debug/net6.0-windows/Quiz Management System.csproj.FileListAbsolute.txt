@@ -17,3 +17,13 @@ C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\o
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.genruntimeconfig.cache
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\ref\Quiz Management System.dll
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.Form2.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.RegisterForm.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz Management System.csproj.CopyComplete
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.AppForm.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.StuLog.resources

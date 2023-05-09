@@ -18,6 +18,16 @@ Answer4 nvarchar(max) not null,
 CorrectAnswer nvarchar(max) not null
 )
 
+insert into Questions values
+(1,'sual4', 'cavab1', 'cavab2', 'cavab3', 'cavab4', 'cavab3')
+
+CREATE TABLE Lecture(
+Id int identity primary key,
+[Data] varbinary(max),
+Extension char(4),
+[FileName] nvarchar(max),
+Subject_id int references Subjects(Id)
+)
 
 CREATE TABLE Groups(
 Id int identity PRIMARY KEY,
@@ -75,3 +85,6 @@ on stu.Id = ss.Student_id
 inner join Groups gr
 on gr.Id = stu.Group_id
 
+
+SELECT * FROM Lecture
+select * from Subjects

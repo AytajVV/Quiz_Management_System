@@ -56,6 +56,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "Z.Dapper.Plus": {
+              "target": "Package",
+              "version": "[5.0.3, )"
             }
           },
           "imports": [

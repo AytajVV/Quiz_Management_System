@@ -44,12 +44,12 @@
             this.dgvSub = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.excelfileName = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.import = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocuments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -204,12 +204,12 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // textBox1
+            // excelfileName
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 417);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(265, 23);
-            this.textBox1.TabIndex = 17;
+            this.excelfileName.Location = new System.Drawing.Point(139, 417);
+            this.excelfileName.Name = "excelfileName";
+            this.excelfileName.Size = new System.Drawing.Size(265, 23);
+            this.excelfileName.TabIndex = 17;
             // 
             // button6
             // 
@@ -219,13 +219,12 @@
             this.button6.TabIndex = 18;
             this.button6.Text = "Browse";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(14, 457);
+            this.label6.Location = new System.Drawing.Point(14, 458);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 21);
             this.label6.TabIndex = 19;
@@ -233,9 +232,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(139, 458);
+            this.textBox2.Location = new System.Drawing.Point(139, 459);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(139, 23);
+            this.textBox2.Size = new System.Drawing.Size(112, 23);
             this.textBox2.TabIndex = 20;
             // 
             // dataGridView1
@@ -247,26 +246,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(490, 75);
             this.dataGridView1.TabIndex = 21;
             // 
-            // comboBox1
+            // import
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(341, 458);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 22;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.import.Location = new System.Drawing.Point(523, 417);
+            this.import.Name = "import";
+            this.import.Size = new System.Drawing.Size(75, 23);
+            this.import.TabIndex = 24;
+            this.import.Text = "Import";
+            this.import.UseVisualStyleBackColor = true;
             // 
             // NewSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.import);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.excelfileName);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dgvSub);
@@ -312,11 +311,19 @@
         private DataGridView dgvSub;
         private Button button4;
         private Button button5;
-        private TextBox textBox1;
+        private TextBox excelfileName;
         private Button button6;
         private Label label6;
         private TextBox textBox2;
         private DataGridView dataGridView1;
-        private ComboBox comboBox1;
+        private Button import;
+        private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn subjectidDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn contentDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn answer1DataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn answer2DataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn answer3DataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn answer4DataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn correctAnswerDataGridViewTextBoxColumn;
     }
 }

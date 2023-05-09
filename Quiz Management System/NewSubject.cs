@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExcelDataReader;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -188,18 +189,10 @@ namespace Quiz_Management_System
         {
             LoadData();
         }
+        
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog() { Filter="Excel 2010 Workbook|*.xls|Excel Workbook|*.xlsx"});
-            {
-                
-            }
-        }
+       
+       
     }
 }

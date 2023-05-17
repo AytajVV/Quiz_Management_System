@@ -22,5 +22,8 @@
     <Compile Update="Teacher_UC\UC_AddNewQuestion.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Udelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

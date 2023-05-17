@@ -32,3 +32,5 @@ C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\o
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\ExcelDataReader.dll
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\ExcelDataReader.DataSet.dll
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Z.Dapper.Plus.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Excel.dll
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.Udelete.resources

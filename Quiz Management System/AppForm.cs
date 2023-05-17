@@ -26,6 +26,7 @@ namespace Quiz_Management_System
         {
             uC_AddNewQuestion1.Visible = false;
             newSubject1.Visible = false;
+            udelete1.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace Quiz_Management_System
             //contentPanel.Hide();
             uC_AddNewQuestion1.Visible = true;
             newSubject1.Visible = false;
+            udelete1.Visible = false;
           
         }
 
@@ -40,6 +42,20 @@ namespace Quiz_Management_System
         {
             newSubject1.Visible = true;
             uC_AddNewQuestion1.Visible = false;
+            udelete1.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+            udelete1.Visible = true;
+            uC_AddNewQuestion1.Visible = false;
+            newSubject1.Visible = false;
         }
     }
 }

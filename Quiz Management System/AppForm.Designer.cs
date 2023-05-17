@@ -39,10 +39,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contentPanel = new System.Windows.Forms.Panel();
+            this.udelete1 = new Quiz_Management_System.Udelete();
+            this.newSubject1 = new Quiz_Management_System.NewSubject();
             this.uC_AddNewQuestion1 = new Quiz_Management_System.Teacher_UC.UC_AddNewQuestion();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.newSubject1 = new Quiz_Management_System.NewSubject();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contentPanel.SuspendLayout();
@@ -138,6 +139,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "View Delete questions";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -150,6 +152,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Update question";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -177,6 +180,7 @@
             // 
             // contentPanel
             // 
+            this.contentPanel.Controls.Add(this.udelete1);
             this.contentPanel.Controls.Add(this.newSubject1);
             this.contentPanel.Controls.Add(this.uC_AddNewQuestion1);
             this.contentPanel.Controls.Add(this.pictureBox2);
@@ -186,6 +190,22 @@
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.Size = new System.Drawing.Size(654, 635);
             this.contentPanel.TabIndex = 2;
+            // 
+            // udelete1
+            // 
+            this.udelete1.BackColor = System.Drawing.Color.SkyBlue;
+            this.udelete1.Location = new System.Drawing.Point(0, 0);
+            this.udelete1.Name = "udelete1";
+            this.udelete1.Size = new System.Drawing.Size(654, 635);
+            this.udelete1.TabIndex = 8;
+            // 
+            // newSubject1
+            // 
+            this.newSubject1.BackColor = System.Drawing.Color.SkyBlue;
+            this.newSubject1.Location = new System.Drawing.Point(0, 0);
+            this.newSubject1.Name = "newSubject1";
+            this.newSubject1.Size = new System.Drawing.Size(654, 635);
+            this.newSubject1.TabIndex = 7;
             // 
             // uC_AddNewQuestion1
             // 
@@ -214,14 +234,6 @@
             this.label2.Size = new System.Drawing.Size(165, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Hello, Teacher!";
-            // 
-            // newSubject1
-            // 
-            this.newSubject1.BackColor = System.Drawing.Color.SkyBlue;
-            this.newSubject1.Location = new System.Drawing.Point(0, 0);
-            this.newSubject1.Name = "newSubject1";
-            this.newSubject1.Size = new System.Drawing.Size(654, 635);
-            this.newSubject1.TabIndex = 7;
             // 
             // AppForm
             // 
@@ -263,5 +275,6 @@
         private Button button7;
         private Teacher_UC.UC_AddNewQuestion uC_AddNewQuestion1;
         private NewSubject newSubject1;
+        private Udelete udelete1;
     }
 }

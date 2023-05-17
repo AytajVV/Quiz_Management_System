@@ -50,6 +50,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.import = new System.Windows.Forms.Button();
+            this.openFD = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocuments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -219,6 +220,7 @@
             this.button6.TabIndex = 18;
             this.button6.Text = "Browse";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label6
             // 
@@ -254,6 +256,11 @@
             this.import.TabIndex = 24;
             this.import.Text = "Import";
             this.import.UseVisualStyleBackColor = true;
+            this.import.Click += new System.EventHandler(this.import_Click);
+            // 
+            // openFD
+            // 
+            this.openFD.FileName = "openFileDialog1";
             // 
             // NewSubject
             // 
@@ -325,5 +332,6 @@
         private DataGridViewTextBoxColumn answer3DataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn answer4DataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn correctAnswerDataGridViewTextBoxColumn;
+        private OpenFileDialog openFD;
     }
 }

@@ -25,5 +25,8 @@
     <Compile Update="Udelete.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="uUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

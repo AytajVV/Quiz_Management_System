@@ -44,6 +44,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.addQuesBtn = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -68,11 +69,12 @@
             // 
             // selectSubCombo
             // 
+            this.selectSubCombo.Enabled = false;
             this.selectSubCombo.FormattingEnabled = true;
             this.selectSubCombo.Items.AddRange(new object[] {
             "Sistem muhendisliyi",
             "Komputer sebekeleri"});
-            this.selectSubCombo.Location = new System.Drawing.Point(184, 65);
+            this.selectSubCombo.Location = new System.Drawing.Point(397, 65);
             this.selectSubCombo.Name = "selectSubCombo";
             this.selectSubCombo.Size = new System.Drawing.Size(177, 23);
             this.selectSubCombo.TabIndex = 3;
@@ -196,11 +198,23 @@
             this.addQuesBtn.UseVisualStyleBackColor = true;
             this.addQuesBtn.Click += new System.EventHandler(this.addQuesBtn_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Sistem muhendisliyi",
+            "Komputer sebekeleri"});
+            this.comboBox1.Location = new System.Drawing.Point(184, 67);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(177, 23);
+            this.comboBox1.TabIndex = 19;
+            // 
             // UC_AddNewQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.addQuesBtn);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -219,6 +233,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_AddNewQuestion";
             this.Size = new System.Drawing.Size(654, 635);
+            this.Load += new System.EventHandler(this.UC_AddNewQuestion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +257,6 @@
         private Label label7;
         private Label label9;
         private Button addQuesBtn;
+        private ComboBox comboBox1;
     }
 }

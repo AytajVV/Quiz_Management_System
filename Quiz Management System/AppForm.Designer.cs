@@ -44,6 +44,7 @@
             this.uC_AddNewQuestion1 = new Quiz_Management_System.Teacher_UC.UC_AddNewQuestion();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.uUpdate1 = new Quiz_Management_System.uUpdate();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contentPanel.SuspendLayout();
@@ -180,6 +181,7 @@
             // 
             // contentPanel
             // 
+            this.contentPanel.Controls.Add(this.uUpdate1);
             this.contentPanel.Controls.Add(this.udelete1);
             this.contentPanel.Controls.Add(this.newSubject1);
             this.contentPanel.Controls.Add(this.uC_AddNewQuestion1);
@@ -235,6 +237,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Hello, Teacher!";
             // 
+            // uUpdate1
+            // 
+            this.uUpdate1.BackColor = System.Drawing.Color.SkyBlue;
+            this.uUpdate1.Location = new System.Drawing.Point(0, 0);
+            this.uUpdate1.Name = "uUpdate1";
+            this.uUpdate1.Size = new System.Drawing.Size(654, 635);
+            this.uUpdate1.TabIndex = 9;
+            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -276,5 +286,6 @@
         private Teacher_UC.UC_AddNewQuestion uC_AddNewQuestion1;
         private NewSubject newSubject1;
         private Udelete udelete1;
+        private uUpdate uUpdate1;
     }
 }

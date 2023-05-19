@@ -14,6 +14,9 @@ namespace Quiz_Management_System
 {
     public partial class Udelete : UserControl
     {
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-M42063Q;Initial Catalog=Quiz_Management_System;Integrated Security=True");
+
+
         public Udelete()
         {
             InitializeComponent();
@@ -56,6 +59,41 @@ namespace Quiz_Management_System
             }
         }
 
+        private void ComboLoad()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-M42063Q;Initial Catalog=Quiz_Management_System;Integrated Security=True");
+            SqlCommand cmd;
+            comboBox1.Items.Clear();
+            con.Open();
+            cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT Name FROM Subjects";
+            cmd.ExecuteNonQuery();
+            DataTable dtbl = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(cmd);
+            dta.Fill(dtbl);
+
+
+            foreach (DataRow dr in dtbl.Rows)
+            {
+                comboBox1.Items.Add(dr["Name"].ToString());
+                
+            }
+            con.Close();
+        }
+
+        private void FilterCombo()
+        {
+            SqlCommand query = new SqlCommand("SELECT q.Id Question_id, s.Name Subject, q.Content, q.Answer1, q.Answer2, q.Answer3, q.Answer4, q.CorrectAnswer FROM Questions q INNER JOIN Subjects s ON q.Subject_id = s.Id WHERE s.Name LIKE '%" + comboBox1.Text + "'", con);
+            SqlDataAdapter dat2 = new SqlDataAdapter();
+            DataTable dtbl2 = new DataTable();
+            dat2.SelectCommand = query;
+            dtbl2.Clear();
+           dat2.Fill(dtbl2);
+            deleteDGV.DataSource = dtbl2;
+
+        }
+
         private void deleteDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -64,6 +102,45 @@ namespace Quiz_Management_System
         private void Udelete_Load(object sender, EventArgs e)
         {
             LoadData();
+            ComboLoad();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FilterCombo();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-M42063Q;Initial Catalog=Quiz_Management_System;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("DELETE  FROM Questions WHERE Id=@ID", con);
+            cmd.Parameters.AddWithValue("@ID", int.Parse(textBox2.Text));
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dtb = new DataTable();
+            adapter.Fill(dtb);
+            deleteDGV.DataSource = dtb;
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Deleted");
+            FilterCombo();
+
+            con.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Quiz_Management_System.Teacher_UC
             //add parameters
 
             scmd.Parameters.Add("@Subject_id", SqlDbType.Int);
-            scmd.Parameters["@Subject_id"].Value = selectSubCombo.SelectedIndex+1;
+            scmd.Parameters["@Subject_id"].Value = comboBox1.SelectedIndex+1;
 
             scmd.Parameters.Add("@Content", SqlDbType.NVarChar);
             scmd.Parameters["@Content"].Value = questionContent.Text;
@@ -68,11 +68,13 @@ namespace Quiz_Management_System.Teacher_UC
             scmd.ExecuteNonQuery();
             con.Close();
 
+            MessageBox.Show("Added");
+
 
         }
         bool Authenticate()
         {
-            if (string.IsNullOrWhiteSpace(selectSubCombo.Text) ||
+            if (string.IsNullOrWhiteSpace(comboBox1.Text) ||
                 string.IsNullOrWhiteSpace(questionContent.Text) ||
                 string.IsNullOrWhiteSpace(answerA.Text) ||
                 string.IsNullOrWhiteSpace(answerB.Text) ||
@@ -83,6 +85,33 @@ namespace Quiz_Management_System.Teacher_UC
 
                 return false;
             else return true;
+
+        }
+        private void ComboLoad()
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-M42063Q;Initial Catalog=Quiz_Management_System;Integrated Security=True");
+            SqlCommand cmd;
+            comboBox1.Items.Clear();
+            con.Open();
+            cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT Name FROM Subjects";
+            cmd.ExecuteNonQuery();
+            DataTable dtbl = new DataTable();
+            SqlDataAdapter dta = new SqlDataAdapter(cmd);
+            dta.Fill(dtbl);
+
+
+            foreach (DataRow dr in dtbl.Rows)
+            {
+                comboBox1.Items.Add(dr["Name"].ToString());
+
+            }
+            con.Close();
+        }
+        private void UC_AddNewQuestion_Load(object sender, EventArgs e)
+        {
+            ComboLoad();
 
         }
     }

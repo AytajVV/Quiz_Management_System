@@ -148,6 +148,7 @@
             this.dgvDocuments.RowTemplate.Height = 25;
             this.dgvDocuments.Size = new System.Drawing.Size(490, 65);
             this.dgvDocuments.TabIndex = 10;
+            this.dgvDocuments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDocuments_CellContentClick);
             // 
             // subLec
             // 

@@ -240,5 +240,10 @@ namespace Quiz_Management_System
 
             
         }
+
+        private void dgvDocuments_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

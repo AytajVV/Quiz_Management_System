@@ -35,3 +35,4 @@ C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\b
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\bin\Debug\net6.0-windows\Microsoft.Office.Interop.Excel.dll
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.Udelete.resources
 C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.uUpdate.resources
+C:\Users\Orbit Computers\Desktop\Quiz Management System\Quiz Management System\obj\Debug\net6.0-windows\Quiz_Management_System.uStuReg.resources

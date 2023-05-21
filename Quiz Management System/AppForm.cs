@@ -28,6 +28,8 @@ namespace Quiz_Management_System
             newSubject1.Visible = false;
             udelete1.Visible = false;
             uUpdate1.Visible = false;
+            uStuReg1.Visible = false;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,7 +39,9 @@ namespace Quiz_Management_System
             newSubject1.Visible = false;
             udelete1.Visible = false;
             uUpdate1.Visible = false;
-          
+            uStuReg1.Visible = false;
+
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -46,6 +50,8 @@ namespace Quiz_Management_System
             uC_AddNewQuestion1.Visible = false;
             udelete1.Visible = false;
             uUpdate1.Visible = false;
+            uStuReg1.Visible = false;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,6 +60,8 @@ namespace Quiz_Management_System
             newSubject1.Visible = false;
             uC_AddNewQuestion1.Visible = false;
             udelete1.Visible = false;
+            uStuReg1.Visible = false;
+
 
         }
 
@@ -61,6 +69,17 @@ namespace Quiz_Management_System
         {
            
             udelete1.Visible = true;
+            uC_AddNewQuestion1.Visible = false;
+            newSubject1.Visible = false;
+            uUpdate1.Visible = false;
+            uStuReg1.Visible = false;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            uStuReg1.Visible = true;
+            udelete1.Visible = false;
             uC_AddNewQuestion1.Visible = false;
             newSubject1.Visible = false;
             uUpdate1.Visible = false;

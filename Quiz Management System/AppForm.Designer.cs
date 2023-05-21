@@ -39,12 +39,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contentPanel = new System.Windows.Forms.Panel();
+            this.uUpdate1 = new Quiz_Management_System.uUpdate();
             this.udelete1 = new Quiz_Management_System.Udelete();
             this.newSubject1 = new Quiz_Management_System.NewSubject();
             this.uC_AddNewQuestion1 = new Quiz_Management_System.Teacher_UC.UC_AddNewQuestion();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.uUpdate1 = new Quiz_Management_System.uUpdate();
+            this.uStuReg1 = new Quiz_Management_System.uStuReg();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contentPanel.SuspendLayout();
@@ -128,6 +129,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Student Registration";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -181,6 +183,7 @@
             // 
             // contentPanel
             // 
+            this.contentPanel.Controls.Add(this.uStuReg1);
             this.contentPanel.Controls.Add(this.uUpdate1);
             this.contentPanel.Controls.Add(this.udelete1);
             this.contentPanel.Controls.Add(this.newSubject1);
@@ -192,6 +195,14 @@
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.Size = new System.Drawing.Size(654, 635);
             this.contentPanel.TabIndex = 2;
+            // 
+            // uUpdate1
+            // 
+            this.uUpdate1.BackColor = System.Drawing.Color.SkyBlue;
+            this.uUpdate1.Location = new System.Drawing.Point(0, 0);
+            this.uUpdate1.Name = "uUpdate1";
+            this.uUpdate1.Size = new System.Drawing.Size(654, 635);
+            this.uUpdate1.TabIndex = 9;
             // 
             // udelete1
             // 
@@ -237,13 +248,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Hello, Teacher!";
             // 
-            // uUpdate1
+            // uStuReg1
             // 
-            this.uUpdate1.BackColor = System.Drawing.Color.SkyBlue;
-            this.uUpdate1.Location = new System.Drawing.Point(0, 0);
-            this.uUpdate1.Name = "uUpdate1";
-            this.uUpdate1.Size = new System.Drawing.Size(654, 635);
-            this.uUpdate1.TabIndex = 9;
+            this.uStuReg1.BackColor = System.Drawing.Color.SkyBlue;
+            this.uStuReg1.Location = new System.Drawing.Point(0, 0);
+            this.uStuReg1.Name = "uStuReg1";
+            this.uStuReg1.Size = new System.Drawing.Size(654, 635);
+            this.uStuReg1.TabIndex = 10;
             // 
             // AppForm
             // 
@@ -287,5 +298,6 @@
         private NewSubject newSubject1;
         private Udelete udelete1;
         private uUpdate uUpdate1;
+        private uStuReg uStuReg1;
     }
 }

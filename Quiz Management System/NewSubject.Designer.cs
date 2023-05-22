@@ -51,6 +51,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.import = new System.Windows.Forms.Button();
             this.openFD = new System.Windows.Forms.OpenFileDialog();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocuments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -263,11 +264,21 @@
             // 
             this.openFD.FileName = "openFileDialog1";
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(522, 164);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 25;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // NewSubject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.import);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox2);
@@ -334,5 +345,6 @@
         private DataGridViewTextBoxColumn answer4DataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn correctAnswerDataGridViewTextBoxColumn;
         private OpenFileDialog openFD;
+        private Button button7;
     }
 }

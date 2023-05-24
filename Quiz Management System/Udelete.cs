@@ -89,7 +89,7 @@ namespace Quiz_Management_System
             DataTable dtbl2 = new DataTable();
             dat2.SelectCommand = query;
             dtbl2.Clear();
-           dat2.Fill(dtbl2);
+            dat2.Fill(dtbl2);
             deleteDGV.DataSource = dtbl2;
 
         }

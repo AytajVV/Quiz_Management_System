@@ -28,6 +28,9 @@
     <Compile Update="uStuReg.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="UstuResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="uUpdate.cs">
       <SubType>UserControl</SubType>
     </Compile>

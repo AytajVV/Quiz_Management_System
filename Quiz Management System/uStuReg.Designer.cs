@@ -46,10 +46,9 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
+            this.newstuDGV = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.groupsDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newstuDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -211,32 +210,23 @@
             this.button4.TabIndex = 22;
             this.button4.Text = "Refresh";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dataGridView1
+            // newstuDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 499);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(576, 112);
-            this.dataGridView1.TabIndex = 23;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(290, 306);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "Refresh";
-            this.button5.UseVisualStyleBackColor = true;
+            this.newstuDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.newstuDGV.Location = new System.Drawing.Point(35, 499);
+            this.newstuDGV.Name = "newstuDGV";
+            this.newstuDGV.RowTemplate.Height = 25;
+            this.newstuDGV.Size = new System.Drawing.Size(576, 112);
+            this.newstuDGV.TabIndex = 23;
             // 
             // uStuReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.newstuDGV);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox6);
@@ -259,7 +249,7 @@
             this.Size = new System.Drawing.Size(654, 635);
             this.Load += new System.EventHandler(this.uStuReg_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupsDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newstuDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,7 +275,6 @@
         private TextBox textBox6;
         private Button button3;
         private Button button4;
-        private DataGridView dataGridView1;
-        private Button button5;
+        private DataGridView newstuDGV;
     }
 }

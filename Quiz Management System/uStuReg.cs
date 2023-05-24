@@ -76,17 +76,23 @@ namespace Quiz_Management_System
                 }
 
 
-                string query2 = "SELECT * FROM Students";
-                SqlDataAdapter adp2 = new SqlDataAdapter(query2, cn);
-                DataTable dt2 = new DataTable();
-                adp2.Fill(dt2);
-                if (dt2.Rows.Count > 0)
+
+
+            }
+        }
+
+        private void LoadDataStu()
+        {
+            using(SqlConnection cn = GetSqlConnection())
+            {
+                string query3 = "SELECT g.Group_no, s.Name, s.Surname, s.Age, g.Specialty FROM Students s INNER JOIN Groups g ON s.Group_id=g.Id";
+                SqlDataAdapter adp3 = new SqlDataAdapter(query3, cn);
+                DataTable dt3 = new DataTable();
+                adp3.Fill(dt3);
+                if (dt3.Rows.Count > 0)
                 {
-                    groupsDGV.DataSource = dt2;
+                    newstuDGV.DataSource = dt3;
                 }
-
-
-
             }
         }
 
@@ -98,6 +104,7 @@ namespace Quiz_Management_System
         private void uStuReg_Load(object sender, EventArgs e)
         {
             LoadData();
+            LoadDataStu();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -128,6 +135,11 @@ namespace Quiz_Management_System
             scmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successful");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoadDataStu();
         }
     }
 }

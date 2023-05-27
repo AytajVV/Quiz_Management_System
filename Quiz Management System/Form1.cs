@@ -17,6 +17,7 @@ namespace Quiz_Management_System
         {
             StuLog stulog = new StuLog();
             stulog.ShowDialog();
+            
         }
     }
 }

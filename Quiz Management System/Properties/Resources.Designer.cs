@@ -114,6 +114,16 @@ namespace Quiz_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b5207d8a_e4f9_468d_91ae_e5cb72992775 {
+            get {
+                object obj = ResourceManager.GetObject("b5207d8a-e4f9-468d-91ae-e5cb72992775", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);
@@ -127,6 +137,16 @@ namespace Quiz_Management_System.Properties {
         internal static System.Drawing.Bitmap ezgif_com_webp_to_jpg {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-webp-to-jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1183575653_612x612_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1183575653-612x612-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

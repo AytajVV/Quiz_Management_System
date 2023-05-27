@@ -44,6 +44,12 @@ Age int
 
 )
 
+ALTER TABLE Students
+ADD Email nvarchar(50);
+
+ALTER TABLE Students
+ADD [Password] nvarchar(50);
+
 
 CREATE TABLE SubjectStudent(
 Id int identity,

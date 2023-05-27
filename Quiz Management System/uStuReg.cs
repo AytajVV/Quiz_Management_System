@@ -85,7 +85,7 @@ namespace Quiz_Management_System
         {
             using(SqlConnection cn = GetSqlConnection())
             {
-                string query3 = "SELECT g.Group_no, s.Name, s.Surname, s.Age, g.Specialty FROM Students s INNER JOIN Groups g ON s.Group_id=g.Id";
+                string query3 = "SELECT g.Group_no, s.Name, s.Surname, s.Age, s.Email, s.Password, g.Specialty FROM Students s INNER JOIN Groups g ON s.Group_id=g.Id";
                 SqlDataAdapter adp3 = new SqlDataAdapter(query3, cn);
                 DataTable dt3 = new DataTable();
                 adp3.Fill(dt3);
@@ -109,8 +109,8 @@ namespace Quiz_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string query = "INSERT INTO Students(Group_id, Name, Surname, Age)" +
-                "VALUES (@groupID, @name, @surname, @age)";
+            string query = "INSERT INTO Students(Group_id, Name, Surname, Age, Email, Password)" +
+                "VALUES (@groupID, @name, @surname, @age, @email, @password)";
 
             con.Open();
 
@@ -131,6 +131,12 @@ namespace Quiz_Management_System
 
             scmd.Parameters.Add("@age", SqlDbType.Int);
             scmd.Parameters["@age"].Value = textBox6.Text;
+
+            scmd.Parameters.Add("@email", SqlDbType.NVarChar);
+            scmd.Parameters["@email"].Value = textBox7.Text;
+
+            scmd.Parameters.Add("@password", SqlDbType.NVarChar);
+            scmd.Parameters["@password"].Value = textBox8.Text;
 
             scmd.ExecuteNonQuery();
             con.Close();

@@ -16,6 +16,9 @@
     <Compile Update="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="StuLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -23,6 +26,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Udelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="uLecture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="uQuiz.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="uStuReg.cs">

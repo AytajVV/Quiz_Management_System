@@ -47,6 +47,10 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.newstuDGV = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.groupsDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newstuDGV)).BeginInit();
             this.SuspendLayout();
@@ -128,7 +132,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(8, 339);
+            this.label4.Location = new System.Drawing.Point(13, 320);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 21);
             this.label4.TabIndex = 13;
@@ -138,7 +142,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(13, 384);
+            this.label5.Location = new System.Drawing.Point(13, 361);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 21);
             this.label5.TabIndex = 14;
@@ -148,7 +152,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(320, 383);
+            this.label6.Location = new System.Drawing.Point(13, 403);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(134, 21);
             this.label6.TabIndex = 15;
@@ -158,7 +162,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(13, 428);
+            this.label7.Location = new System.Drawing.Point(13, 443);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 21);
             this.label7.TabIndex = 16;
@@ -166,37 +170,37 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 337);
+            this.textBox3.Location = new System.Drawing.Point(156, 321);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 23);
             this.textBox3.TabIndex = 17;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(156, 384);
+            this.textBox4.Location = new System.Drawing.Point(156, 362);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(140, 23);
             this.textBox4.TabIndex = 18;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(471, 381);
+            this.textBox5.Location = new System.Drawing.Point(156, 404);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(140, 23);
             this.textBox5.TabIndex = 19;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(59, 429);
+            this.textBox6.Location = new System.Drawing.Point(156, 444);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(41, 23);
+            this.textBox6.Size = new System.Drawing.Size(140, 23);
             this.textBox6.TabIndex = 20;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(156, 426);
+            this.button3.Location = new System.Drawing.Point(497, 441);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(101, 23);
             this.button3.TabIndex = 21;
             this.button3.Text = "Add";
             this.button3.UseVisualStyleBackColor = true;
@@ -204,9 +208,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(536, 470);
+            this.button4.Location = new System.Drawing.Point(497, 470);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(101, 23);
             this.button4.TabIndex = 22;
             this.button4.Text = "Refresh";
             this.button4.UseVisualStyleBackColor = true;
@@ -221,11 +225,49 @@
             this.newstuDGV.Size = new System.Drawing.Size(576, 112);
             this.newstuDGV.TabIndex = 23;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(367, 321);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(51, 21);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Email";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(471, 321);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(140, 23);
+            this.textBox7.TabIndex = 25;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(471, 362);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(140, 23);
+            this.textBox8.TabIndex = 26;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(367, 361);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(84, 21);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Password";
+            // 
             // uStuReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.newstuDGV);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -276,5 +318,9 @@
         private Button button3;
         private Button button4;
         private DataGridView newstuDGV;
+        private Label label8;
+        private TextBox textBox7;
+        private TextBox textBox8;
+        private Label label9;
     }
 }

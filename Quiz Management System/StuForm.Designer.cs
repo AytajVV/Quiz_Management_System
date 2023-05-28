@@ -94,20 +94,19 @@
             // uLecture1
             // 
             this.uLecture1.BackColor = System.Drawing.Color.White;
-            this.uLecture1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uLecture1.Location = new System.Drawing.Point(0, 30);
+            this.uLecture1.Location = new System.Drawing.Point(0, 33);
             this.uLecture1.Name = "uLecture1";
-            this.uLecture1.Size = new System.Drawing.Size(800, 420);
+            this.uLecture1.Size = new System.Drawing.Size(800, 412);
             this.uLecture1.TabIndex = 3;
             this.uLecture1.Visible = false;
             // 
             // uQuiz1
             // 
             this.uQuiz1.BackColor = System.Drawing.Color.White;
-            this.uQuiz1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uQuiz1.Location = new System.Drawing.Point(0, 30);
+            this.uQuiz1.Location = new System.Drawing.Point(0, 33);
             this.uQuiz1.Name = "uQuiz1";
-            this.uQuiz1.Size = new System.Drawing.Size(800, 420);
+            this.uQuiz1.Size = new System.Drawing.Size(800, 417);
+            this.uQuiz1.stName = null;
             this.uQuiz1.TabIndex = 4;
             this.uQuiz1.Visible = false;
             // 
@@ -116,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 445);
             this.Controls.Add(this.uQuiz1);
             this.Controls.Add(this.uLecture1);
             this.Controls.Add(this.pictureBox1);
@@ -125,6 +124,7 @@
             this.Name = "StuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StuForm";
+            this.Load += new System.EventHandler(this.StuForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

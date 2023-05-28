@@ -81,6 +81,7 @@ namespace Quiz_Management_System
                 Hide();
                 StuForm StuApp = new StuForm();
                 StuApp.ShowDialog();
+              
                 Close();
             }
             con.Close();
@@ -97,5 +98,10 @@ namespace Quiz_Management_System
             else return true;
 
         }
+
+       
+       
+        
+        
     }
 }

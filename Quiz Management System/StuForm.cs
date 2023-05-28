@@ -12,6 +12,7 @@ namespace Quiz_Management_System
 {
     public partial class StuForm : Form
     {
+       
         public StuForm()
         {
             InitializeComponent();
@@ -32,6 +33,12 @@ namespace Quiz_Management_System
         {
             uQuiz1.Visible = true;
             uLecture1.Visible = false;
+            
+        }
+
+        private void StuForm_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

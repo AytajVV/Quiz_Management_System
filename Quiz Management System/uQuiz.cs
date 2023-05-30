@@ -13,7 +13,8 @@ namespace Quiz_Management_System
 {
     public partial class uQuiz : UserControl
     {
-        public string stName { get; set; }
+        //public string stuName { get; set; }
+        
         public uQuiz()
         {
             InitializeComponent();
@@ -42,7 +43,9 @@ namespace Quiz_Management_System
         }
         private void uQuiz_Load(object sender, EventArgs e)
         {
+
             ComboLoad();
+            //textBox1.Text = "hello";
         }
                                                                                                        
         private void RandomData()

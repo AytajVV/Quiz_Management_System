@@ -106,9 +106,10 @@
             this.uQuiz1.Location = new System.Drawing.Point(0, 33);
             this.uQuiz1.Name = "uQuiz1";
             this.uQuiz1.Size = new System.Drawing.Size(800, 417);
-            this.uQuiz1.stName = null;
+           
             this.uQuiz1.TabIndex = 4;
             this.uQuiz1.Visible = false;
+            this.uQuiz1.Load += new System.EventHandler(this.uQuiz1_Load);
             // 
             // StuForm
             // 

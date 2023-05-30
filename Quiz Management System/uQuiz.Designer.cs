@@ -112,6 +112,8 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1099,11 +1101,30 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "2.";
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(527, 24);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(51, 21);
+            this.label23.TabIndex = 15;
+            this.label23.Text = "Email";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(604, 24);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(178, 23);
+            this.textBox1.TabIndex = 16;
+            // 
             // uQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label23);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.radioButton4);
@@ -1229,5 +1250,7 @@
         private Label label21;
         private Label label20;
         private Label label22;
+        private Label label23;
+        private TextBox textBox1;
     }
 }

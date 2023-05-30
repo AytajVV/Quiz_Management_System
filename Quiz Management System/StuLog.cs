@@ -78,6 +78,8 @@ namespace Quiz_Management_System
             }
             else
             {
+                //uQuiz uQuiz = new uQuiz();
+                //uQuiz.stuName = EmailLog.Text;
                 Hide();
                 StuForm StuApp = new StuForm();
                 StuApp.ShowDialog();

@@ -40,5 +40,10 @@ namespace Quiz_Management_System
         {
             
         }
+
+        private void uQuiz1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

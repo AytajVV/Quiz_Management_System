@@ -45,7 +45,7 @@ namespace Quiz_Management_System
         {
 
             ComboLoad();
-            //textBox1.Text = "hello";
+           
         }
                                                                                                        
         private void RandomData()
@@ -60,15 +60,15 @@ namespace Quiz_Management_System
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    // Execute the query and retrieve the result
+                   
                     SqlDataReader reader = command.ExecuteReader();
 
                     if (reader.Read())
                     {
-                        // Assuming you want to retrieve a specific column, replace "YourColumn" with the actual column name
+                    
                         string randomData = reader["Content"].ToString();
 
-                        // Update the label in the Windows Forms application
+                    
                         label3.Text = randomData;
                     }
 
@@ -86,15 +86,15 @@ namespace Quiz_Management_System
 
                 using (SqlCommand command = new SqlCommand(query1, connection))
                 {
-                    // Execute the query and retrieve the result
+                
                     SqlDataReader reader = command.ExecuteReader();
 
                     if (reader.Read())
                     {
-                        // Assuming you want to retrieve a specific column, replace "YourColumn" with the actual column name
+                       
                         string data = reader["Answer1"].ToString();
 
-                        // Update the label in the Windows Forms application
+                      
                         radioButton1.Text = data;
                     }
 
@@ -112,16 +112,17 @@ namespace Quiz_Management_System
 
                 using (SqlCommand command = new SqlCommand(query2, connection))
                 {
-                    // Execute the query and retrieve the result
+                    
                     SqlDataReader reader = command.ExecuteReader();
 
                     if (reader.Read())
                     {
-                        // Assuming you want to retrieve a specific column, replace "YourColumn" with the actual column name
+                        
                         string data = reader["Answer2"].ToString();
 
-                        // Update the label in the Windows Forms application
+                        
                         radioButton2.Text = data;
+                        
                     }
 
                     reader.Close();
@@ -192,15 +193,15 @@ namespace Quiz_Management_System
 
                 using (SqlCommand command = new SqlCommand(Mainquery2, connection))
                 {
-                    // Execute the query and retrieve the result
+                   
                     SqlDataReader reader = command.ExecuteReader();
 
                     if (reader.Read())
                     {
-                        // Assuming you want to retrieve a specific column, replace "YourColumn" with the actual column name
+                   
                         string randomData = reader["Content"].ToString();
 
-                        // Update the label in the Windows Forms application
+                     
                         label5.Text = randomData;
                     }
 
@@ -217,15 +218,15 @@ namespace Quiz_Management_System
 
                 using (SqlCommand command = new SqlCommand(query5, connection))
                 {
-                    // Execute the query and retrieve the result
+                 
                     SqlDataReader reader = command.ExecuteReader();
 
                     if (reader.Read())
                     {
-                        // Assuming you want to retrieve a specific column, replace "YourColumn" with the actual column name
+                     
                         string data = reader["Answer1"].ToString();
 
-                        // Update the label in the Windows Forms application
+                     
                         radioButton5.Text = data;
                     }
 
@@ -243,15 +244,15 @@ namespace Quiz_Management_System
 
                 using (SqlCommand command = new SqlCommand(query6, connection))
                 {
-                    // Execute the query and retrieve the result
+                
                     SqlDataReader reader = command.ExecuteReader();
 
                     if (reader.Read())
                     {
-                        // Assuming you want to retrieve a specific column, replace "YourColumn" with the actual column name
+                        
                         string data = reader["Answer2"].ToString();
 
-                        // Update the label in the Windows Forms application
+                       
                         radioButton6.Text = data;
                     }
 

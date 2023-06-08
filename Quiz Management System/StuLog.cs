@@ -23,6 +23,8 @@ namespace Quiz_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Properties.Settings.Default.studentEmail = EmailLog.Text;
+            Properties.Settings.Default.Save();
             bool isEmailok = false, isPassok = false;
             if (!Authenticate())
             {

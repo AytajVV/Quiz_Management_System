@@ -89,6 +89,7 @@
             this.EmailLog.Name = "EmailLog";
             this.EmailLog.Size = new System.Drawing.Size(183, 26);
             this.EmailLog.TabIndex = 6;
+            this.EmailLog.Text = "aveyisli123@naa.edu.az";
             // 
             // label4
             // 
@@ -108,6 +109,7 @@
             this.PassLog.PasswordChar = '•';
             this.PassLog.Size = new System.Drawing.Size(183, 26);
             this.PassLog.TabIndex = 8;
+            this.PassLog.Text = "veyisli123";
             // 
             // button1
             // 
@@ -156,9 +158,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox EmailLog;
         private Label label4;
         private TextBox PassLog;
         private Button button1;
+        public TextBox EmailLog;
     }
 }

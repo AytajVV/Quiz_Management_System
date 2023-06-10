@@ -59,12 +59,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(14, 19);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(302, 24);
+            this.label1.Size = new System.Drawing.Size(221, 30);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Add New Subject and lecture";
+            this.label1.Text = "Yeni fənn və mühazirə";
             // 
             // label2
             // 
@@ -72,9 +72,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(14, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 21);
+            this.label2.Size = new System.Drawing.Size(79, 21);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Add subject";
+            this.label2.Text = "Yeni fənn";
             // 
             // addnewsubtxt
             // 
@@ -89,7 +89,7 @@
             this.addSubBtn.Name = "addSubBtn";
             this.addSubBtn.Size = new System.Drawing.Size(75, 23);
             this.addSubBtn.TabIndex = 4;
-            this.addSubBtn.Text = "Add";
+            this.addSubBtn.Text = "Daxil et";
             this.addSubBtn.UseVisualStyleBackColor = true;
             this.addSubBtn.Click += new System.EventHandler(this.addSubBtn_Click);
             // 
@@ -97,11 +97,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(14, 229);
+            this.label3.Location = new System.Drawing.Point(12, 229);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 21);
+            this.label3.Size = new System.Drawing.Size(113, 21);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Add lecture";
+            this.label3.Text = "Yeni mühazirə";
             // 
             // label4
             // 
@@ -109,9 +109,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(14, 417);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 21);
+            this.label4.Size = new System.Drawing.Size(124, 21);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Add questions";
+            this.label4.Text = "Sualları daxil et";
             // 
             // filePath
             // 
@@ -126,7 +126,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Browse";
+            this.button1.Text = "Seç";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -136,7 +136,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Save";
+            this.button2.Text = "Daxil et";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -159,11 +159,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(523, 338);
+            this.button3.Location = new System.Drawing.Point(523, 349);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 12;
-            this.button3.Text = "Open";
+            this.button3.Text = "Aç";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -173,9 +173,9 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(14, 266);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 21);
+            this.label5.Size = new System.Drawing.Size(71, 21);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Subject id";
+            this.label5.Text = "Fənn İD";
             // 
             // dgvSub
             // 
@@ -192,7 +192,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 15;
-            this.button4.Text = "Refresh";
+            this.button4.Text = "Yenilə";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -202,7 +202,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 16;
-            this.button5.Text = "Refresh";
+            this.button5.Text = "Yenilə";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -219,7 +219,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 18;
-            this.button6.Text = "Browse";
+            this.button6.Text = "Seç";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -229,9 +229,9 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(14, 458);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 21);
+            this.label6.Size = new System.Drawing.Size(71, 21);
             this.label6.TabIndex = 19;
-            this.label6.Text = "Subject id";
+            this.label6.Text = "Fənn İD";
             // 
             // textBox2
             // 

@@ -43,12 +43,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(15, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 24);
+            this.label1.Size = new System.Drawing.Size(209, 30);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Student Result";
+            this.label1.Text = "Tələbələrin nəticələri";
             // 
             // comboBox1
             // 
@@ -72,9 +72,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(24, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 21);
+            this.label2.Size = new System.Drawing.Size(47, 21);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Subject";
+            this.label2.Text = "Fənn";
             // 
             // label3
             // 
@@ -82,9 +82,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(24, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 21);
+            this.label3.Size = new System.Drawing.Size(49, 21);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Group";
+            this.label3.Text = "Qrup";
             // 
             // button1
             // 
@@ -92,7 +92,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Filter";
+            this.button1.Text = "Seç";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,7 +111,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Filter";
+            this.button2.Text = "Seç";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -121,7 +121,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 14;
-            this.button3.Text = "Refresh";
+            this.button3.Text = "Yenilə";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

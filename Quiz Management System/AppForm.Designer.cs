@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contentPanel = new System.Windows.Forms.Panel();
+            this.ustuResults1 = new Quiz_Management_System.UstuResults();
             this.uStuReg1 = new Quiz_Management_System.uStuReg();
             this.uUpdate1 = new Quiz_Management_System.uUpdate();
             this.udelete1 = new Quiz_Management_System.Udelete();
@@ -46,7 +47,6 @@
             this.uC_AddNewQuestion1 = new Quiz_Management_System.Teacher_UC.UC_AddNewQuestion();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ustuResults1 = new Quiz_Management_System.UstuResults();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contentPanel.SuspendLayout();
@@ -83,12 +83,12 @@
             this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.Location = new System.Drawing.Point(34, 121);
+            this.button7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.Location = new System.Drawing.Point(12, 121);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(124, 32);
+            this.button7.Size = new System.Drawing.Size(155, 32);
             this.button7.TabIndex = 6;
-            this.button7.Text = "Add Subject";
+            this.button7.Text = "Fənn əlavə et";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -98,12 +98,12 @@
             this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button6.Location = new System.Drawing.Point(12, 569);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(163, 34);
             this.button6.TabIndex = 5;
-            this.button6.Text = "Log out";
+            this.button6.Text = "Çıxış";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -111,12 +111,12 @@
             // 
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.Location = new System.Drawing.Point(29, 388);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(146, 31);
+            this.button5.Size = new System.Drawing.Size(146, 59);
             this.button5.TabIndex = 3;
-            this.button5.Text = "All student result";
+            this.button5.Text = "Tələbələrin nəticələri";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -124,12 +124,12 @@
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(12, 335);
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(12, 336);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(163, 36);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Student Registration";
+            this.button4.Text = "Tələbə qeydiyyatı";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -137,12 +137,12 @@
             // 
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(12, 279);
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(6, 278);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(169, 40);
             this.button3.TabIndex = 4;
-            this.button3.Text = "View Delete questions";
+            this.button3.Text = "Sualı sil";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -150,12 +150,12 @@
             // 
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(34, 227);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(124, 32);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Update question";
+            this.button2.Text = "Redaktə et";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -164,12 +164,12 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(34, 174);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 32);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Add question";
+            this.button1.Text = "Sual əlavə et";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -198,6 +198,14 @@
             this.contentPanel.Name = "contentPanel";
             this.contentPanel.Size = new System.Drawing.Size(654, 635);
             this.contentPanel.TabIndex = 2;
+            // 
+            // ustuResults1
+            // 
+            this.ustuResults1.BackColor = System.Drawing.Color.SkyBlue;
+            this.ustuResults1.Location = new System.Drawing.Point(0, 0);
+            this.ustuResults1.Name = "ustuResults1";
+            this.ustuResults1.Size = new System.Drawing.Size(654, 635);
+            this.ustuResults1.TabIndex = 7;
             // 
             // uStuReg1
             // 
@@ -259,14 +267,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Hello, Teacher!";
             // 
-            // ustuResults1
-            // 
-            this.ustuResults1.BackColor = System.Drawing.Color.SkyBlue;
-            this.ustuResults1.Location = new System.Drawing.Point(0, 0);
-            this.ustuResults1.Name = "ustuResults1";
-            this.ustuResults1.Size = new System.Drawing.Size(654, 635);
-            this.ustuResults1.TabIndex = 7;
-            // 
             // AppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -278,7 +278,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AppForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AppForm";
+            this.Text = "Əsas səhifə";
             this.Load += new System.EventHandler(this.AppForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

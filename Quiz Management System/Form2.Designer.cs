@@ -57,9 +57,9 @@
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(491, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 32);
+            this.label1.Size = new System.Drawing.Size(186, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Welcome Back!";
+            this.label1.Text = "Xoş Gəlmisiz!";
             // 
             // label2
             // 
@@ -69,9 +69,9 @@
             this.label2.ForeColor = System.Drawing.Color.MediumSeaGreen;
             this.label2.Location = new System.Drawing.Point(664, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 28);
+            this.label2.Size = new System.Drawing.Size(98, 28);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Sign in";
+            this.label2.Text = "Daxil ol";
             // 
             // label3
             // 
@@ -89,9 +89,9 @@
             this.label4.Font = new System.Drawing.Font("Arial Unicode MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(522, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 21);
+            this.label4.Size = new System.Drawing.Size(42, 21);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Password";
+            this.label4.Text = "Şifrə";
             // 
             // EmailLog
             // 
@@ -123,7 +123,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(250, 33);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Sign in";
+            this.button1.Text = "Daxil ol";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -133,20 +133,20 @@
             this.label5.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(575, 368);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(144, 18);
+            this.label5.Size = new System.Drawing.Size(115, 18);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Don\'t have an account?";
+            this.label5.Text = "Hesabınız yoxdur?";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabel1.Location = new System.Drawing.Point(716, 369);
+            this.linkLabel1.Location = new System.Drawing.Point(698, 370);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(53, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(104, 16);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Register";
+            this.linkLabel1.Text = "Qeydiyyatdan keç";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form2

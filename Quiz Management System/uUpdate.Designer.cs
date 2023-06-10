@@ -54,12 +54,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 12);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 24);
+            this.label1.Size = new System.Drawing.Size(115, 30);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Update Question";
+            this.label1.Text = "Redaktə et";
             // 
             // label3
             // 
@@ -67,9 +67,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(16, 58);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 21);
+            this.label3.Size = new System.Drawing.Size(47, 21);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Subject";
+            this.label3.Text = "Fənn";
             // 
             // label2
             // 
@@ -77,9 +77,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(16, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 21);
+            this.label2.Size = new System.Drawing.Size(42, 21);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Content";
+            this.label2.Text = "Sual";
             // 
             // label4
             // 
@@ -87,9 +87,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(16, 238);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 21);
+            this.label4.Size = new System.Drawing.Size(75, 21);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Answer1";
+            this.label4.Text = "Cavab A";
             // 
             // label5
             // 
@@ -97,9 +97,9 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(16, 278);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 21);
+            this.label5.Size = new System.Drawing.Size(75, 21);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Answer2";
+            this.label5.Text = "Cavab B";
             // 
             // label6
             // 
@@ -109,7 +109,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 21);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Answer3";
+            this.label6.Text = "Cavab C";
             // 
             // label7
             // 
@@ -119,7 +119,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 21);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Answer4";
+            this.label7.Text = "Cavab D";
             // 
             // label8
             // 
@@ -127,9 +127,9 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(16, 406);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 21);
+            this.label8.Size = new System.Drawing.Size(116, 21);
             this.label8.TabIndex = 13;
-            this.label8.Text = "CorrectAnswer";
+            this.label8.Text = "Düzgün cavab";
             // 
             // textBox2
             // 
@@ -199,7 +199,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 23;
-            this.button4.Text = "Select";
+            this.button4.Text = "Seç";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -209,7 +209,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 33);
             this.button1.TabIndex = 24;
-            this.button1.Text = "Update";
+            this.button1.Text = "Redaktə et";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

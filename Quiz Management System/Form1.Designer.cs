@@ -56,7 +56,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(179, 40);
             this.button1.TabIndex = 2;
-            this.button1.Text = "I\'m a teacher";
+            this.button1.Text = "Mən müəlliməm";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -64,11 +64,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(265, 236);
+            this.label1.Location = new System.Drawing.Point(244, 235);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(275, 26);
+            this.label1.Size = new System.Drawing.Size(339, 26);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Learning and Testing System";
+            this.label1.Text = "Avtomatlaşdırılmış Öyrətmə Sistemi";
             // 
             // button2
             // 
@@ -81,7 +81,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(179, 40);
             this.button2.TabIndex = 4;
-            this.button2.Text = "I\'m a student";
+            this.button2.Text = "Mən tələbəyəm";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

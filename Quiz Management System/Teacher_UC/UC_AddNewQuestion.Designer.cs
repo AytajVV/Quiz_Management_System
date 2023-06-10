@@ -50,12 +50,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(15, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 24);
+            this.label1.Size = new System.Drawing.Size(139, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Questions";
+            this.label1.Text = "Sual əlavə et";
             // 
             // label2
             // 
@@ -63,9 +65,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(25, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 21);
+            this.label2.Size = new System.Drawing.Size(77, 21);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Select subject";
+            this.label2.Text = "Fənn seç";
             // 
             // selectSubCombo
             // 
@@ -85,9 +87,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(44, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 21);
+            this.label3.Size = new System.Drawing.Size(42, 21);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Question";
+            this.label3.Text = "Sual";
             // 
             // questionContent
             // 
@@ -138,9 +140,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(44, 225);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 21);
+            this.label4.Size = new System.Drawing.Size(75, 21);
             this.label4.TabIndex = 12;
-            this.label4.Text = "Answer A";
+            this.label4.Text = "Cavab A";
             // 
             // label5
             // 
@@ -148,9 +150,9 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(44, 283);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 21);
+            this.label5.Size = new System.Drawing.Size(75, 21);
             this.label5.TabIndex = 13;
-            this.label5.Text = "Answer B";
+            this.label5.Text = "Cavab B";
             // 
             // label6
             // 
@@ -158,9 +160,9 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(43, 339);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 21);
+            this.label6.Size = new System.Drawing.Size(76, 21);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Answer C";
+            this.label6.Text = "Cavab C";
             // 
             // label7
             // 
@@ -168,9 +170,9 @@
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(43, 393);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 21);
+            this.label7.Size = new System.Drawing.Size(76, 21);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Answer D";
+            this.label7.Text = "Cavab D";
             // 
             // label9
             // 
@@ -179,9 +181,9 @@
             this.label9.ForeColor = System.Drawing.Color.Green;
             this.label9.Location = new System.Drawing.Point(15, 483);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 21);
+            this.label9.Size = new System.Drawing.Size(120, 21);
             this.label9.TabIndex = 17;
-            this.label9.Text = "Correct Answer ";
+            this.label9.Text = "Düzgün Cavab";
             // 
             // addQuesBtn
             // 
@@ -189,12 +191,12 @@
             this.addQuesBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
             this.addQuesBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Green;
             this.addQuesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addQuesBtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.addQuesBtn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.addQuesBtn.Location = new System.Drawing.Point(184, 565);
             this.addQuesBtn.Name = "addQuesBtn";
             this.addQuesBtn.Size = new System.Drawing.Size(284, 42);
             this.addQuesBtn.TabIndex = 18;
-            this.addQuesBtn.Text = "Add Question";
+            this.addQuesBtn.Text = "Əlavə et";
             this.addQuesBtn.UseVisualStyleBackColor = true;
             this.addQuesBtn.Click += new System.EventHandler(this.addQuesBtn_Click);
             // 

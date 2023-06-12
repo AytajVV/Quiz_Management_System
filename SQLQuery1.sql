@@ -94,3 +94,51 @@ on gr.Id = stu.Group_id
 
 SELECT * FROM Lecture
 select * from Subjects
+
+
+SELECT stu.Name, stu.Surname, stu.Email, g.Group_no, sub.Name Subject, ss.Score FROM SubjectStudent ss 
+INNER JOIN Students stu 
+ON ss.Student_id=stu.Id 
+INNER JOIN Groups g 
+ON stu.Group_id=g.Id 
+INNER JOIN Subjects sub 
+ON ss.Subject_id=sub.Id
+
+
+INSERT INTO SubjectStudent(Score) VALUES(10) 
+SELECT stu.Name, stu.Surname, stu.Email, g.Group_no, sub.Name Subject, ss.Score FROM SubjectStudent ss 
+INNER JOIN Students stu 
+ON ss.Student_id=stu.Id 
+INNER JOIN Groups g 
+ON stu.Group_id=g.Id 
+INNER JOIN Subjects sub 
+ON ss.Subject_id=sub.Id
+WHERE stu.Email LIKE 'neliyeva222@naa.edu.az%'
+
+
+
+INSERT INTO SubjectStudent(Score) VALUES(10) 
+SELECT stu.Name, stu.Surname, stu.Email, g.Group_no, sub.Name Subject, ss.Score FROM SubjectStudent ss 
+INNER JOIN Students stu 
+ON ss.Student_id=stu.Id 
+INNER JOIN Groups g 
+ON stu.Group_id=g.Id 
+INNER JOIN Subjects sub 
+ON ss.Subject_id=sub.Id
+WHERE stu.Email LIKE 'neliyeva222@naa.edu.az%'
+
+
+
+INSERT INTO SubjectStudent(Student_id, Subject_id, Score) VALUES(
+(SELECT Students.Id from Students where Students.Email like 'neliyeva222@naa.edu.az%'), (SELECT Subjects.Id FROM Subjects WHERE Subjects.Name LIKE 'Sistem muhendisliyi%'), 10) 
+
+
+
+
+SELECT stu.Name, stu.Surname, stu.Email, g.Group_no, sub.Name Subject, ss.Score FROM SubjectStudent ss 
+INNER JOIN Students stu 
+ON ss.Student_id=stu.Id 
+INNER JOIN Groups g 
+ON stu.Group_id=g.Id 
+INNER JOIN Subjects sub 
+ON ss.Subject_id=sub.Id

@@ -122,10 +122,10 @@
             // groupsDGV
             // 
             this.groupsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.groupsDGV.Location = new System.Drawing.Point(35, 154);
+            this.groupsDGV.Location = new System.Drawing.Point(35, 160);
             this.groupsDGV.Name = "groupsDGV";
             this.groupsDGV.RowTemplate.Height = 25;
-            this.groupsDGV.Size = new System.Drawing.Size(576, 112);
+            this.groupsDGV.Size = new System.Drawing.Size(354, 112);
             this.groupsDGV.TabIndex = 12;
             // 
             // label4

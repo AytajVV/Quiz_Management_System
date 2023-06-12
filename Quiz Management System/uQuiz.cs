@@ -14,6 +14,8 @@ namespace Quiz_Management_System
     public partial class uQuiz : UserControl
     {
         //public string stuName { get; set; }
+        static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-M42063Q;Initial Catalog=Quiz_Management_System;Integrated Security=True");
+        static SqlCommand scmd;
 
         public uQuiz()
         {
@@ -183,7 +185,20 @@ namespace Quiz_Management_System
             }
             else
             {
-                MessageBox.Show("Suallar bitdi");
+                MessageBox.Show($"Suallar bitdi. Topladığınız bal:{point}");
+
+
+                string query = "INSERT INTO SubjectStudent(Student_id, Subject_id, Score) VALUES((SELECT Students.Id from Students where Students.Email like '"+lblEmail.Text+"%'), (SELECT Subjects.Id FROM Subjects WHERE Subjects.Name LIKE '"+comboBox1.Text+"%'), @point)";
+                con.Open();
+                scmd = new SqlCommand(query, con);
+
+                scmd.Parameters.Add("@point", SqlDbType.Int);
+                scmd.Parameters["@point"].Value = point;
+
+
+                scmd.ExecuteNonQuery();
+                con.Close();
+
             }
         }
     }

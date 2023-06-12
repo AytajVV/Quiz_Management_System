@@ -80,6 +80,7 @@
             this.selectSubCombo.Name = "selectSubCombo";
             this.selectSubCombo.Size = new System.Drawing.Size(177, 23);
             this.selectSubCombo.TabIndex = 3;
+            this.selectSubCombo.Visible = false;
             // 
             // label3
             // 

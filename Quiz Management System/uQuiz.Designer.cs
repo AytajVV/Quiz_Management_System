@@ -31,8 +31,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -41,6 +39,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.lblPoint = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -71,29 +70,14 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Fənn";
             // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(527, 24);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 21);
-            this.label23.TabIndex = 15;
-            this.label23.Text = "Email";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(604, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 23);
-            this.textBox1.TabIndex = 16;
-            // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(55, 52);
+            this.lblEmail.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.ForeColor = System.Drawing.Color.Red;
+            this.lblEmail.Location = new System.Drawing.Point(560, 22);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(44, 15);
+            this.lblEmail.Size = new System.Drawing.Size(56, 19);
             this.lblEmail.TabIndex = 17;
             this.lblEmail.Text = "label22";
             // 
@@ -169,11 +153,22 @@
             this.lblPoint.Size = new System.Drawing.Size(0, 17);
             this.lblPoint.TabIndex = 24;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(498, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 19);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Tələbə:";
+            // 
             // uQuiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblPoint);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
@@ -182,8 +177,6 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label23);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
@@ -200,8 +193,6 @@
         private Button button1;
         private ComboBox comboBox1;
         private Label label1;
-        private Label label23;
-        private TextBox textBox1;
         public Label lblEmail;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
@@ -210,5 +201,6 @@
         private TextBox textBox2;
         private Button button2;
         private Label lblPoint;
+        private Label label2;
     }
 }

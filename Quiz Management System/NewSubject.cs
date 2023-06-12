@@ -191,55 +191,9 @@ namespace Quiz_Management_System
             LoadData();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            
-            using(OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "Excel Files Only | *.xlsx; *.xls";
-                ofd.Title = "Choose the file";
-                if (ofd.ShowDialog() == DialogResult.OK )
-                {
-                    excelfileName.Text = ofd.FileName;
-                }
-            }
-        }
+        
 
-        private void import_Click(object sender, EventArgs e)
-        {
-            Microsoft.Office.Interop.Excel.Application xlapp;
-            Microsoft.Office.Interop.Excel.Workbook xlworkbook;
-            Microsoft.Office.Interop.Excel.Worksheet xlworksheet;
-            Microsoft.Office.Interop.Excel.Range xlrange;
-
-            try
-            {
-                xlapp = new Microsoft.Office.Interop.Excel.Application();
-                xlworkbook = xlapp.Workbooks.Open(excelfileName.Text);
-                xlworksheet = (Microsoft.Office.Interop.Excel.Worksheet)xlworkbook.Worksheets["Sheet1"];
-                xlrange = xlworksheet.UsedRange;
-
-                dataGridView1.ColumnCount=xlrange.Columns.Count;
-                int i=0;
-                for (int xlrow = 1; xlrow <= xlrange.Rows.Count; xlrow++)        
-                {
-                    i++;
-                    dataGridView1.Rows.Add(i, xlrange.Cells[xlrow, 1].ToString(), xlrange.Cells[xlrow, 2].ToString(), xlrange.Cells[xlrow, 3].ToString(), xlrange.Cells[xlrow, 4].ToString(), xlrange.Cells[xlrow, 5].ToString(), xlrange.Cells[xlrow, 6].ToString());
-                }
-                xlworkbook.Close();
-                xlapp.Quit();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-               
-            }
-
-            
-            
-
-            
-        }
+        
 
         private void dgvDocuments_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

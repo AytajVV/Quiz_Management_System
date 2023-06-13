@@ -142,3 +142,6 @@ INNER JOIN Groups g
 ON stu.Group_id=g.Id 
 INNER JOIN Subjects sub 
 ON ss.Subject_id=sub.Id
+
+
+SELECT * FROM Subjects
